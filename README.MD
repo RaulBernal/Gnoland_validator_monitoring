@@ -15,11 +15,11 @@ go build -o validator-monitor .
 ./validator-monitor
 ```
 
-## Python version
+## Python version
 ### Edit config.go with your Telegram's secrets.
 - Replace with your Token and Group.
 
-### Install requests module
+### Install requests module
 ```
 pip install requests
 ```
