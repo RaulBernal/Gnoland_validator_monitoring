@@ -48,3 +48,7 @@ pip install requests
 ```
 python3 validator-monitor.py
 ```
+
+
+## Cudos to the first version (developer of the BASH tool for Cosmos):
+- https://github.com/DDeAlmeida/BitCannaTools
