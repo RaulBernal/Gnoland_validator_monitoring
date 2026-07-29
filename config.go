@@ -6,6 +6,11 @@ const (
 	TelegramChatID   = "-1001234567890" // use negative ID for groups/channels
 )
 
+// RPC configuration
+const (
+	RpcURL          = "https://rpc.topaz.testnets.gno.land/block"
+	TimeMsgSeconds  = 60
+)
 
 // address monitoring variables
 var validatorsToMonGnoland = []Validator{
