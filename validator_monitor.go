@@ -11,9 +11,6 @@ import (
 
 const timeMsgSeconds = 60
 
-// https://test11.testnets.gno.land/r/sys/validators/v2
-const urlGnoland = "https://rpc.test11.testnets.gno.land/block"
-
 // address monitoring variables
 type Validator struct {
 	Name     string
@@ -84,7 +81,7 @@ func welcomeMsg() {
 }
 
 func checkSigners() {
-	resp, err := http.Get(urlGnoland)
+	resp, err := http.Get(RpcURL)
 	if err != nil {
 		errorMsg := "⚠️ An error occurred getting the last block"
 		fmt.Println("\n" + errorMsg)
