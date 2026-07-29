@@ -9,8 +9,6 @@ import (
 	"time"
 )
 
-const timeMsgSeconds = 60
-
 // address monitoring variables
 type Validator struct {
 	Name     string
@@ -131,6 +129,6 @@ func main() {
 	welcomeMsg()
 	for {
 		checkSigners()
-		time.Sleep(timeMsgSeconds * time.Second)
+		time.Sleep(TimeMsgSeconds * time.Second)
 	}
 }
