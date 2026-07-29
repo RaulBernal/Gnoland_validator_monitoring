@@ -70,7 +70,7 @@ func sendTelegram(message string) {
 // Bot logic
 
 func welcomeMsg() {
-	msg := fmt.Sprintf("*Go Bot started, we are going to check some VALIDATORS every %d seconds*\n\n", timeMsgSeconds)
+	msg := fmt.Sprintf("*Go Bot started, we are going to check some VALIDATORS every %d seconds*\n\n", TimeMsgSeconds)
 	for _, v := range validatorsToMonGnoland {
 		msg += fmt.Sprintf("- Checking: `%s` - *%s*\n", v.Address, v.Name)
 	}
